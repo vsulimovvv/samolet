@@ -1,0 +1,1820 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- Nice Select -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Самолет</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--online-booking">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Онлайн запись</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link link-anchor" href="#services">
+          <span>Услуги</span>
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link link-anchor" href="#calc">
+          <span>Калькулятор </span>
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link link-anchor" href="#cases"
+          ><span>Кейсы</span></a
+        >
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link link-anchor" href="#reviews">
+          <span>Отзывы</span>
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link link-anchor" href="#blog">
+          <span>Блог</span>
+        </a>
+      </li>
+
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link link-anchor" href="#contacts">
+          <span>Контакты</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__left">
+        <a class="header__logo logo" href="#">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <div class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link link-anchor" href="#services">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link-anchor" href="#calc">Калькулятор</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link-anchor" href="#cases">Кейсы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link-anchor" href="#reviews">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link-anchor" href="#blog">Блог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link-anchor" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__right">
+        <a class="header__phone" href="tel:+79520622762">
+          +7 (952) 062-27-62
+        </a>
+
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <div class="hero-benefits-bg">
+          <section class="hero">
+  <div class="container">
+    <ul class="hero-socials">
+      <li class="hero-socials__item">
+        <a class="hero-socials__link" href="#">
+          WhatsApp
+
+          <span class="hero-socials__icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="hero-socials__item">
+        <a class="hero-socials__link" href="#">
+          Vkontakte
+          <span class="hero-socials__icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="hero-socials__item">
+        <a class="hero-socials__link" href="#">
+          Telegram
+          <span class="hero-socials__icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <div class="hero__top">
+      <h1 class="hero__title">
+        Настроим поток <br />
+        клиентов в ваш бизнес
+      </h1>
+      <p class="hero__text">за счет методик проверенных на 300+ компаниях</p>
+      <a class="hero__btn btn link-anchor" href="#contacts">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+    </div>
+
+    <div class="hero__bottom">
+      <div class="hero__item">
+        <div class="hero__icon">
+          <img src="img/hero/check.png" alt="img" />
+        </div>
+        <b> У 80% компаний рост прибыли х2 </b> <br />
+        <span>решаем за счет повышения количества заявок в 2,5 раза</span>
+      </div>
+      <div class="hero__item">
+        <div class="hero__icon">
+          <img src="img/hero/check.png" alt="img" />
+        </div>
+        <b>Проверенные методики </b>
+        <span>
+          привлечения <br />
+          клиентов во все сферы бизнеса
+        </span>
+      </div>
+    </div>
+
+    <a class="hero__arrow link-anchor" href="#benefits">
+      <svg>
+        <use xlink:href="img/sprite.svg#chevron"></use>
+      </svg>
+    </a>
+  </div>
+</section>
+
+          <section class="benefits" id="benefits">
+  <div class="container">
+    <div class="benefits__top">
+      <h2 class="benefits__title section-title">
+        Работающий маркетинг <br />
+        <span class="color-accent"> для Ваших продаж</span>
+      </h2>
+      <p class="benefits__text">
+        Маркетинговое агентство полного цикла по онлайн продвижению <br />
+        малого и среднего бизнеса в Интернете и соцсетях
+      </p>
+    </div>
+    <ul class="benefits__list">
+      <li class="benefits-item">
+        <div class="benefits-item__img">
+          <picture>
+            <source srcset="img/benefits/1.webp" type="image/webp" />
+            <img src="img/benefits/1.png" alt="img" />
+          </picture>
+        </div>
+        <div class="benefits-item__inner">
+          <div class="benefits-item__top">
+            <span class="benefits-item__name">Комплекс услуг</span>
+          </div>
+          <div class="benefits-item__body">
+            <p>
+              У нас вы можете заказать комплекс услуг по продвижению бизнеса,
+              что сэкономит ваше время и деньги
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item__img">
+          <picture>
+            <source srcset="img/benefits/2.webp" type="image/webp" />
+            <img src="img/benefits/2.png" alt="img" />
+          </picture>
+        </div>
+        <div class="benefits-item__inner">
+          <div class="benefits-item__top">
+            <span class="benefits-item__name">Вовлеченность в проект</span>
+          </div>
+          <div class="benefits-item__body">
+            <p>
+              Наша команда вникает во все тонкости Вашего бизнеса и готовит
+              персональное проработанное предложение
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item__img">
+          <picture>
+            <source srcset="img/benefits/3.webp" type="image/webp" />
+            <img src="img/benefits/3.png" alt="img" />
+          </picture>
+        </div>
+        <div class="benefits-item__inner">
+          <div class="benefits-item__top">
+            <span class="benefits-item__name">Ответственность</span>
+          </div>
+          <div class="benefits-item__body">
+            <p>
+              У нас работает команда профессионалов, которая подберет лучшие
+              решения для Вашего бизнеса
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item__img">
+          <picture>
+            <source srcset="img/benefits/4.webp" type="image/webp" />
+            <img src="img/benefits/4.png" alt="img" />
+          </picture>
+        </div>
+        <div class="benefits-item__inner">
+          <div class="benefits-item__top">
+            <span class="benefits-item__name">Адекватные цены</span>
+          </div>
+          <div class="benefits-item__body">
+            <p>
+              У нас есть разные варианты пакетов и отдельных услуг, которые
+              подойдут под любой тип бизнеса
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item__img">
+          <picture>
+            <source srcset="img/benefits/5.webp" type="image/webp" />
+            <img src="img/benefits/5.png" alt="img" />
+          </picture>
+        </div>
+        <div class="benefits-item__inner">
+          <div class="benefits-item__top">
+            <span class="benefits-item__name">Качество</span>
+          </div>
+          <div class="benefits-item__body">
+            <p>
+              Скорость и качество нашей работы высоко ценят наши клиенты. Мы
+              умеем достигать целей и перевыполнять показатели
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="benefits-item">
+        <div class="benefits-item__img">
+          <picture>
+            <source srcset="img/benefits/6.webp" type="image/webp" />
+            <img src="img/benefits/6.png" alt="img" />
+          </picture>
+        </div>
+        <div class="benefits-item__inner">
+          <div class="benefits-item__top">
+            <span class="benefits-item__name">Профессионалы</span>
+          </div>
+          <div class="benefits-item__body">
+            <p>
+              Все наши сотрудники проходят внутренние обучение и сдают экзамены
+              до начала работы с клиентами
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        </div>
+        <section class="services" id="services">
+  <div class="container">
+    <h2 class="services__title section-title">Наши услуги</h2>
+
+    <ul class="services__list">
+      <li class="services__item">
+        <article class="services-card">
+          <div class="services-card__icon">
+            <img src="img/services-icons/vk.png" alt="img" />
+          </div>
+          <div class="services-card__top">
+            <h3 class="services-card__title">
+              Таргетированная <br />
+              реклама Вконтакте
+            </h3>
+            <span class="services-card__number">01</span>
+          </div>
+          <div class="services-card__body">
+            <p class="services-card__text">
+              Привлечем клиентов по минимальной цене. Раскрутим профили
+              Вконтакте и наберем аудиторию.
+            </p>
+            <div class="services-card__btns">
+              <button class="services-card__btn btn" type="button">
+                Заказать
+              </button>
+              <button
+                class="services-card__btn btn btn--transparent"
+                type="button"
+              >
+                Подробнее
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="services__item">
+        <article class="services-card">
+          <div class="services-card__icon">
+            <img src="img/services-icons/yandex.png" alt="img" />
+          </div>
+          <div class="services-card__top">
+            <h3 class="services-card__title">
+              Контекстная реклама <br />
+              Яндекс
+            </h3>
+            <span class="services-card__number">02</span>
+          </div>
+          <div class="services-card__body">
+            <p class="services-card__text">
+              Эффективная настройка контекстной рекламы на ваш сайт (или
+              создадим бесплатно сайт) из рекламной системы Яндекс.
+            </p>
+            <div class="services-card__btns">
+              <button class="services-card__btn btn" type="button">
+                Заказать
+              </button>
+              <button
+                class="services-card__btn btn btn--transparent"
+                type="button"
+              >
+                Подробнее
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="services__item">
+        <article class="services-card">
+          <div class="services-card__icon">
+            <img src="img/services-icons/star.png" alt="img" />
+          </div>
+          <div class="services-card__top">
+            <h3 class="services-card__title">
+              Таргетированная <br />
+              реклама Вконтакте
+            </h3>
+            <span class="services-card__number">01</span>
+          </div>
+          <div class="services-card__body">
+            <p class="services-card__text">
+              Привлечем клиентов по минимальной цене. Раскрутим профили
+              Вконтакте и наберем аудиторию.
+            </p>
+            <div class="services-card__btns">
+              <button class="services-card__btn btn" type="button">
+                Заказать
+              </button>
+              <button
+                class="services-card__btn btn btn--transparent"
+                type="button"
+              >
+                Подробнее
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="services__item">
+        <article class="services-card">
+          <div class="services-card__icon">
+            <img src="img/services-icons/click.png" alt="img" />
+          </div>
+          <div class="services-card__top">
+            <h3 class="services-card__title">
+              Контекстная реклама <br />
+              Яндекс
+            </h3>
+            <span class="services-card__number">02</span>
+          </div>
+          <div class="services-card__body">
+            <p class="services-card__text">
+              Эффективная настройка контекстной рекламы на ваш сайт (или
+              создадим бесплатно сайт) из рекламной системы Яндекс.
+            </p>
+            <div class="services-card__btns">
+              <button class="services-card__btn btn" type="button">
+                Заказать
+              </button>
+              <button
+                class="services-card__btn btn btn--transparent"
+                type="button"
+              >
+                Подробнее
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="services__item">
+        <article class="services-card">
+          <div class="services-card__icon">
+            <img src="img/services-icons/vk.png" alt="img" />
+          </div>
+          <div class="services-card__top">
+            <h3 class="services-card__title">
+              Контекстная реклама <br />
+              Яндекс
+            </h3>
+            <span class="services-card__number">02</span>
+          </div>
+          <div class="services-card__body">
+            <p class="services-card__text">
+              Эффективная настройка контекстной рекламы на ваш сайт (или
+              создадим бесплатно сайт) из рекламной системы Яндекс.
+            </p>
+            <div class="services-card__btns">
+              <button class="services-card__btn btn" type="button">
+                Заказать
+              </button>
+              <button
+                class="services-card__btn btn btn--transparent"
+                type="button"
+              >
+                Подробнее
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="services__item">
+        <article class="services-card">
+          <div class="services-card__icon">
+            <img src="img/services-icons/whatsapp.png" alt="img" />
+          </div>
+          <div class="services-card__top">
+            <h3 class="services-card__title">
+              Контекстная реклама <br />
+              Яндекс
+            </h3>
+            <span class="services-card__number">02</span>
+          </div>
+          <div class="services-card__body">
+            <p class="services-card__text">
+              Эффективная настройка контекстной рекламы на ваш сайт (или
+              создадим бесплатно сайт) из рекламной системы Яндекс.
+            </p>
+            <div class="services-card__btns">
+              <button class="services-card__btn btn" type="button">
+                Заказать
+              </button>
+              <button
+                class="services-card__btn btn btn--transparent"
+                type="button"
+              >
+                Подробнее
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="services__item">
+        <article class="services-card">
+          <div class="services-card__icon">
+            <img src="img/services-icons/telegram.png" alt="img" />
+          </div>
+          <div class="services-card__top">
+            <h3 class="services-card__title">
+              Контекстная реклама <br />
+              Яндекс
+            </h3>
+            <span class="services-card__number">02</span>
+          </div>
+          <div class="services-card__body">
+            <p class="services-card__text">
+              Эффективная настройка контекстной рекламы на ваш сайт (или
+              создадим бесплатно сайт) из рекламной системы Яндекс.
+            </p>
+            <div class="services-card__btns">
+              <button class="services-card__btn btn" type="button">
+                Заказать
+              </button>
+              <button
+                class="services-card__btn btn btn--transparent"
+                type="button"
+              >
+                Подробнее
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <div class="why-cases-bg">
+          <section class="why">
+  <div class="container">
+    <div class="why__wrapper">
+      <h2 class="why__title section-title">
+        Почему стоит <br />
+        работать с нами?
+      </h2>
+      <div class="why__text">
+        <p>
+          Главная причина - наше чёткое понимание что такое
+          “клиентоориентированность”. Это не значит всегда и во всём соглашаться
+          с клиентом, чтобы угодить и быть удобным.
+        </p>
+        <p>
+          Для нас клиентоориентированность - это сказать правду в интересах
+          бизнеса заказчика. Бывают ситуации, когда это сделать очень не просто.
+        </p>
+      </div>
+    </div>
+    <div class="why__bottom">
+      <a class="why__arrow link-anchor" href="#cases">
+        <svg>
+          <use xlink:href="img/sprite.svg#chevron"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+          <section class="cases" id="cases">
+  <div class="container">
+    <h2 class="cases__title section-title">
+      <span class="color-gray">Решаем бизнес-задачи</span> нестандартными
+      методами
+    </h2>
+
+    <ul class="cases__items">
+      <li class="cases__item">
+        <article class="cases-card">
+          <div class="cases-card__top">
+            <span class="cases-card__number"> 01 </span>
+            <h3 class="cases-card__title">Ремонт квартир в Санкт-Петербурге</h3>
+          </div>
+          <div class="cases-card__body">
+            <div class="cases-card__img">
+              <picture>
+                <source srcset="img/cases/1.webp" type="image/webp" />
+                <img class="image" src="img/cases/1.jpg" alt="" />
+              </picture>
+            </div>
+            <ul class="cases-card__list">
+              <li class="cases-card__item">
+                <div class="cases-card__item-top">
+                  <img src="img/target.png" alt="img" />
+                  <h4 class="cases-card__item-title">Цель</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>Заявки на ремонт квартир в Санкт-Петербурге</p>
+                </div>
+              </li>
+              <li class="cases-card__item">
+                <div class="cases-card__item-top">
+                  <img src="img/gear.png" alt="img" />
+                  <h4 class="cases-card__item-title">Что сделано</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>
+                    Таргетированная реклама Вконтакте. Потрачено 1 304 521.49
+                    рублей рекламного бюджета.
+                  </p>
+                </div>
+              </li>
+              <li class="cases-card__item cases-card__item--big">
+                <div class="cases-card__icon">
+                  <img src="img/check-cases.png" alt="img" />
+                </div>
+                <div class="cases-card__item-top">
+                  <img src="img/star.png" alt="img" />
+                  <h4 class="cases-card__item-title">Результат</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>• 3469 заявок за 1,3 млн рублей</p>
+                  <p>• стоимость одной заявки: 375 рублей</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </li>
+      <li class="cases__item">
+        <article class="cases-card">
+          <div class="cases-card__top">
+            <span class="cases-card__number"> 02 </span>
+            <h3 class="cases-card__title">
+              Кухни и мебель на заказ в Оренбурге
+            </h3>
+          </div>
+          <div class="cases-card__body">
+            <div class="cases-card__img">
+              <picture>
+                <source srcset="img/cases/2.webp" type="image/webp" />
+                <img class="image" src="img/cases/2.jpg" alt="" />
+              </picture>
+            </div>
+            <ul class="cases-card__list">
+              <li class="cases-card__item">
+                <div class="cases-card__item-top">
+                  <img src="img/target.png" alt="img" />
+                  <h4 class="cases-card__item-title">Цель</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>
+                    Повторить результат своего коллеги, но уже в другом городе.
+                  </p>
+                </div>
+              </li>
+              <li class="cases-card__item">
+                <div class="cases-card__item-top">
+                  <img src="img/gear.png" alt="img" />
+                  <h4 class="cases-card__item-title">Что сделано</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>
+                    Таргетированная реклама в инстаграм на этот квиз — потратив
+                    на бюджет 18 927, 15 рублей. Создан квиз-сайт на 7 вопросов.
+                  </p>
+                </div>
+              </li>
+              <li class="cases-card__item cases-card__item--big">
+                <div class="cases-card__icon">
+                  <img src="img/check-cases.png" alt="img" />
+                </div>
+                <div class="cases-card__item-top">
+                  <img src="img/star.png" alt="img" />
+                  <h4 class="cases-card__item-title">Результат</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>92 заявки за 30 дней по 205 рублей.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </li>
+
+      <li class="cases__item">
+        <article class="cases-card">
+          <div class="cases-card__top">
+            <span class="cases-card__number"> 03 </span>
+            <h3 class="cases-card__title">Клиенты для агенства недвижимости</h3>
+          </div>
+          <div class="cases-card__body">
+            <div class="cases-card__img">
+              <picture>
+                <source srcset="img/cases/3.webp" type="image/webp" />
+                <img class="image" src="img/cases/3.jpg" alt="" />
+              </picture>
+            </div>
+            <ul class="cases-card__list">
+              <li class="cases-card__item">
+                <div class="cases-card__item-top">
+                  <img src="img/target.png" alt="img" />
+                  <h4 class="cases-card__item-title">Цель</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>
+                    Привлечении клиентов на покупку квартиры в новостройке для
+                    агенства недвижимости
+                  </p>
+                </div>
+              </li>
+              <li class="cases-card__item">
+                <div class="cases-card__item-top">
+                  <img src="img/gear.png" alt="img" />
+                  <h4 class="cases-card__item-title">Что сделано</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>
+                    Запуск рекламы в Яндекс директе — на поиск и через
+                    рся(рекламная сеть Яндекса) Создание квиз-сайт на каждый ЖК
+                    в городе
+                  </p>
+                </div>
+              </li>
+              <li class="cases-card__item cases-card__item--big">
+                <div class="cases-card__icon">
+                  <img src="img/check-cases.png" alt="img" />
+                </div>
+                <div class="cases-card__item-top">
+                  <img src="img/star.png" alt="img" />
+                  <h4 class="cases-card__item-title">Результат</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>5 370 заявок по 133 рубля</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </li>
+      <li class="cases__item">
+        <article class="cases-card">
+          <div class="cases-card__top">
+            <span class="cases-card__number"> 04 </span>
+            <h3 class="cases-card__title">
+              ООО «Креадом» — строительство домов в Твери
+            </h3>
+          </div>
+          <div class="cases-card__body">
+            <div class="cases-card__img">
+              <picture>
+                <source srcset="img/cases/4.webp" type="image/webp" />
+                <img class="image" src="img/cases/4.jpg" alt="" />
+              </picture>
+            </div>
+            <ul class="cases-card__list">
+              <li class="cases-card__item">
+                <div class="cases-card__item-top">
+                  <img src="img/target.png" alt="img" />
+                  <h4 class="cases-card__item-title">Цель</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>
+                    Привлечении клиентов на покупку домов в Твери и Тверской
+                    области
+                  </p>
+                </div>
+              </li>
+              <li class="cases-card__item">
+                <div class="cases-card__item-top">
+                  <img src="img/gear.png" alt="img" />
+                  <h4 class="cases-card__item-title">Что сделано</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>
+                    Запуск рекламы Вконтакте Потрачено 50 398 рублей рекламного
+                    бюджета
+                  </p>
+                </div>
+              </li>
+              <li class="cases-card__item cases-card__item--big">
+                <div class="cases-card__icon">
+                  <img src="img/check-cases.png" alt="img" />
+                </div>
+                <div class="cases-card__item-top">
+                  <img src="img/star.png" alt="img" />
+                  <h4 class="cases-card__item-title">Результат</h4>
+                </div>
+                <div class="cases-card__item-body">
+                  <p>106 заявок. Стоимость заявки: 476 рублей</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <div class="cases-accordions">
+      <div class="cases-accordions__accordion accordion">
+        <div class="cases-accordions__control accordion-control-btn">
+          <div class="cases-accordions__control-left">
+            <span class="cases-accordions__control-number">01</span>
+            <h3 class="cases-accordions__control-title">
+              Ремонт квартир в Санкт-Петербурге
+            </h3>
+          </div>
+
+          <svg>
+            <use xlink:href="img/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+
+        <div class="cases-accordions__content accordion-content">
+          <div class="cases-accordions__inner">
+            <div class="cases-card">
+              <div class="cases-card__body">
+                <div class="cases-card__img">
+                  <picture>
+                    <source srcset="img/cases/1.webp" type="image/webp" />
+                    <img class="image" src="img/cases/1.jpg" alt="" />
+                  </picture>
+                </div>
+                <ul class="cases-card__list">
+                  <li class="cases-card__item">
+                    <div class="cases-card__item-top">
+                      <img src="img/target.png" alt="img" />
+                      <h4 class="cases-card__item-title">Цель</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>Заявки на ремонт квартир в Санкт-Петербурге</p>
+                    </div>
+                  </li>
+                  <li class="cases-card__item">
+                    <div class="cases-card__item-top">
+                      <img src="img/gear.png" alt="img" />
+                      <h4 class="cases-card__item-title">Что сделано</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>
+                        Таргетированная реклама Вконтакте. Потрачено 1 304
+                        521.49 рублей рекламного бюджета.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="cases-card__item cases-card__item--big">
+                    <div class="cases-card__icon">
+                      <img src="img/check-cases.png" alt="img" />
+                    </div>
+                    <div class="cases-card__item-top">
+                      <img src="img/star.png" alt="img" />
+                      <h4 class="cases-card__item-title">Результат</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>• 3469 заявок за 1,3 млн рублей</p>
+                      <p>• стоимость одной заявки: 375 рублей</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cases-accordions__accordion accordion">
+        <div class="cases-accordions__control accordion-control-btn">
+          <div class="cases-accordions__control-left">
+            <span class="cases-accordions__control-number">02</span>
+            <h3 class="cases-accordions__control-title">
+              Кухни и мебель на заказ в Оренбурге
+            </h3>
+          </div>
+
+          <svg>
+            <use xlink:href="img/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+
+        <div class="cases-accordions__content accordion-content">
+          <div class="cases-accordions__inner">
+            <div class="cases-card">
+              <div class="cases-card__body">
+                <div class="cases-card__img">
+                  <picture>
+                    <source srcset="img/cases/2.webp" type="image/webp" />
+                    <img class="image" src="img/cases/2.jpg" alt="" />
+                  </picture>
+                </div>
+                <ul class="cases-card__list">
+                  <li class="cases-card__item">
+                    <div class="cases-card__item-top">
+                      <img src="img/target.png" alt="img" />
+                      <h4 class="cases-card__item-title">Цель</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>
+                        Повторить результат своего коллеги, но уже в другом
+                        городе.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="cases-card__item">
+                    <div class="cases-card__item-top">
+                      <img src="img/gear.png" alt="img" />
+                      <h4 class="cases-card__item-title">Что сделано</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>
+                        Таргетированная реклама в инстаграм на этот квиз —
+                        потратив на бюджет 18 927, 15 рублей. Создан квиз-сайт
+                        на 7 вопросов.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="cases-card__item cases-card__item--big">
+                    <div class="cases-card__icon">
+                      <img src="img/check-cases.png" alt="img" />
+                    </div>
+                    <div class="cases-card__item-top">
+                      <img src="img/star.png" alt="img" />
+                      <h4 class="cases-card__item-title">Результат</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>92 заявки за 30 дней по 205 рублей.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cases-accordions__accordion accordion">
+        <div class="cases-accordions__control accordion-control-btn">
+          <div class="cases-accordions__control-left">
+            <span class="cases-accordions__control-number">03</span>
+            <h3 class="cases-accordions__control-title">
+              Клиенты для агентства недвижимости
+            </h3>
+          </div>
+
+          <svg>
+            <use xlink:href="img/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+
+        <div class="cases-accordions__content accordion-content">
+          <div class="cases-accordions__inner">
+            <div class="cases-card">
+              <div class="cases-card__body">
+                <div class="cases-card__img">
+                  <picture>
+                    <source srcset="img/cases/3.webp" type="image/webp" />
+                    <img class="image" src="img/cases/3.jpg" alt="" />
+                  </picture>
+                </div>
+                <ul class="cases-card__list">
+                  <li class="cases-card__item">
+                    <div class="cases-card__item-top">
+                      <img src="img/target.png" alt="img" />
+                      <h4 class="cases-card__item-title">Цель</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>
+                        Привлечении клиентов на покупку квартиры в новостройке
+                        для агенства недвижимости
+                      </p>
+                    </div>
+                  </li>
+                  <li class="cases-card__item">
+                    <div class="cases-card__item-top">
+                      <img src="img/gear.png" alt="img" />
+                      <h4 class="cases-card__item-title">Что сделано</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>
+                        Запуск рекламы в Яндекс директе — на поиск и через
+                        рся(рекламная сеть Яндекса) Создание квиз-сайт на каждый
+                        ЖК в городе
+                      </p>
+                    </div>
+                  </li>
+                  <li class="cases-card__item cases-card__item--big">
+                    <div class="cases-card__icon">
+                      <img src="img/check-cases.png" alt="img" />
+                    </div>
+                    <div class="cases-card__item-top">
+                      <img src="img/star.png" alt="img" />
+                      <h4 class="cases-card__item-title">Результат</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>5 370 заявок по 133 рубля</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cases-accordions__accordion accordion">
+        <div class="cases-accordions__control accordion-control-btn">
+          <div class="cases-accordions__control-left">
+            <span class="cases-accordions__control-number">04</span>
+            <h3 class="cases-accordions__control-title">
+              ООО “Креадом” - строительство домов в Твери
+            </h3>
+          </div>
+
+          <svg>
+            <use xlink:href="img/sprite.svg#chevron"></use>
+          </svg>
+        </div>
+
+        <div class="cases-accordions__content accordion-content">
+          <div class="cases-accordions__inner">
+            <div class="cases-card">
+              <div class="cases-card__body">
+                <div class="cases-card__img">
+                  <picture>
+                    <source srcset="img/cases/4.webp" type="image/webp" />
+                    <img class="image" src="img/cases/4.jpg" alt="" />
+                  </picture>
+                </div>
+                <ul class="cases-card__list">
+                  <li class="cases-card__item">
+                    <div class="cases-card__item-top">
+                      <img src="img/target.png" alt="img" />
+                      <h4 class="cases-card__item-title">Цель</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>
+                        Привлечении клиентов на покупку домов в Твери и Тверской
+                        области
+                      </p>
+                    </div>
+                  </li>
+                  <li class="cases-card__item">
+                    <div class="cases-card__item-top">
+                      <img src="img/gear.png" alt="img" />
+                      <h4 class="cases-card__item-title">Что сделано</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>
+                        Запуск рекламы Вконтакте Потрачено 50 398 рублей
+                        рекламного бюджета
+                      </p>
+                    </div>
+                  </li>
+                  <li class="cases-card__item cases-card__item--big">
+                    <div class="cases-card__icon">
+                      <img src="img/check-cases.png" alt="img" />
+                    </div>
+                    <div class="cases-card__item-top">
+                      <img src="img/star.png" alt="img" />
+                      <h4 class="cases-card__item-title">Результат</h4>
+                    </div>
+                    <div class="cases-card__item-body">
+                      <p>106 заявок. Стоимость заявки: 476 рублей</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cases__bottom">
+      <button class="cases__more" type="button">
+        ПОСМОТРЕТЬ <br />
+        ЕЩЕ
+      </button>
+    </div>
+  </div>
+</section>
+
+        </div>
+        <div class="reviews-reporting-bg">
+          <section class="reporting" id="cases">
+  <div class="container">
+    <h2 class="reporting__title">Оцифровка и отчетность</h2>
+
+    <div class="reporting__items">
+      <div class="reporting__item">
+        <p>
+          Вы будете иметь полную картину текущей ситуации по вашим рекламным
+          каналам. И не просто банальное число кликов, расход денег и т.п. Вы
+          будете знать значения именно тех показателей, которые дадут вам
+          понимание динамики работы интернет-маркетинга в вашем бизнесе.
+        </p>
+      </div>
+      <div class="reporting__item">
+        <p>
+          Вы будете иметь полную картину текущей ситуации по вашим рекламным
+          каналам. И не просто банальное число кликов, расход денег и т.п. Вы
+          будете знать значения именно тех показателей, которые дадут вам
+          понимание динамики работы интернет-маркетинга в вашем бизнесе.
+        </p>
+      </div>
+    </div>
+
+    <div class="advantages">
+      <div class="advantages__wrapper">
+        <div class="advantages__item">
+          <span class="advantages__name"
+            >Гарантия чистого целевого трафика</span
+          >
+          <p class="advantages__text">
+            Мы гарантируем вам на сайт только целевых посетителей. То есть тех
+            людей, которые ищут именно ваш товар или услугу. Другими словами, мы
+            возвращаем вам стоимость нецелевых кликов, если такие будут. Ваш
+            рекламный бюджет застрахован от “слива”.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <span class="advantages__name">Повышаем конверсию</span>
+          <p class="advantages__text">
+            В период абонентского обслуживания мы работаем над увеличением
+            конверсии вашего сайта. Наш опыт и знания позволяютделать это. Не
+            каждая команда по контекстной рекламе имеет такие навыки.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <span class="advantages__name">Аккаунт — ваша собственность</span>
+          <p class="advantages__text">
+            Мы работаем на вашем аккаунте. Или делаем новый и передаем вам. В
+            любом случае аккаунт будет принадлежать вам. Большинство агентств
+            работают на своих аккаунтах, и их оплата привязана к расходу
+            рекламного бюджета клиента. И при вашей попытке разорвать с ними
+            отношения вам просто не отдадут ваш аккаунт.
+          </p>
+        </div>
+        <div class="advantages__item">
+          <span class="advantages__name">Командная работа</span>
+          <p class="advantages__text">
+            Над вашим проектом будет работать команда специалистов. Сами
+            настройки — это только часть успеха. Очень важна и «упаковка» вашего
+            предложения на сайте. Поэтому и нужно несколько специалистов, чтобы
+            обеспечить комплексный подход к вашему бизнесу и взаимоконтроль.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+          
+
+          <section class="reviews" id="reviews">
+  <div class="container">
+    <h2 class="reviews__title section-title">
+      Послушайте <br />
+      <span class="color-gray">что говорят</span>
+      <span class="color-accent">наши клиенты</span>
+    </h2>
+  </div>
+
+  <div class="videos">
+    <div class="videos__slider swiper">
+      <ul class="videos__slides swiper-wrapper">
+        <li class="videos__slide swiper-slide">
+          <div class="videos-card">
+            <div class="videos-card__top">
+              <img
+                src="https://images.unsplash.com/photo-1678933964986-22090877ccf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="img"
+              />
+            </div>
+            <span class="videos-card__name">
+              Маркетинг для ниши кухни на заказ в Москве
+            </span>
+          </div>
+        </li>
+        <li class="videos__slide swiper-slide">
+          <div class="videos-card">
+            <div class="videos-card__top">
+              <img
+                src="https://images.unsplash.com/photo-1678933964986-22090877ccf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="img"
+              />
+            </div>
+            <span class="videos-card__name">
+              Маркетинг для ниши кухни на заказ в Москве
+            </span>
+          </div>
+        </li>
+        <li class="videos__slide swiper-slide">
+          <div class="videos-card">
+            <div class="videos-card__top">
+              <img
+                src="https://images.unsplash.com/photo-1678933964986-22090877ccf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="img"
+              />
+            </div>
+            <span class="videos-card__name">
+              Маркетинг для ниши кухни на заказ в Москве
+            </span>
+          </div>
+        </li>
+        <li class="videos__slide swiper-slide">
+          <div class="videos-card">
+            <div class="videos-card__top">
+              <img
+                src="https://images.unsplash.com/photo-1678933964986-22090877ccf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="img"
+              />
+            </div>
+            <span class="videos-card__name">
+              Маркетинг для ниши кухни на заказ в Москве
+            </span>
+          </div>
+        </li>
+        <li class="videos__slide swiper-slide">
+          <div class="videos-card">
+            <div class="videos-card__top">
+              <img
+                src="https://images.unsplash.com/photo-1678933964986-22090877ccf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="img"
+              />
+            </div>
+            <span class="videos-card__name">
+              Маркетинг для ниши кухни на заказ в Москве
+            </span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="reviews__slider swiper">
+      <ul class="reviews__slides swiper-wrapper">
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-card">
+            <div class="reviews-card__left">
+              <div class="reviews-card__img">
+                <picture>
+                  <source srcset="img/reviews/1.webp" type="image/webp" />
+                  <img src="img/reviews/1.png" alt="img" />
+                </picture>
+              </div>
+
+              <div class="reviews-card__info">
+                <span class="reviews-card__name">Сергей Белоцерковец</span>
+                <a class="reviews-card__btn btn" href="#" target="_blank">
+                  Профиль ВК
+                </a>
+              </div>
+            </div>
+            <div class="reviews-card__right">
+              <p>
+                Эти ребята обратились ко мне с предложением давать мне лиды в
+                моей нише "изготовление корпусной мебель под заказ". По ходу
+                дела увидел: работают чётко, без воды. Лиды дают целевые,
+                один-два в день.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-card">
+            <div class="reviews-card__left">
+              <div class="reviews-card__img">
+                <picture>
+                  <source srcset="img/reviews/2.webp" type="image/webp" />
+                  <img src="img/reviews/2.png" alt="img" />
+                </picture>
+              </div>
+
+              <div class="reviews-card__info">
+                <span class="reviews-card__name">Максим Шокин</span>
+                <a class="reviews-card__btn btn" href="#" target="_blank">
+                  Профиль ВК
+                </a>
+              </div>
+            </div>
+            <div class="reviews-card__right">
+              <p>
+                Пробывал тест, на партнерскую программу, все работает, лиды
+                приходят, просто я еще не научился продавать, а так рекомендую,
+                проверено.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-card">
+            <div class="reviews-card__left">
+              <div class="reviews-card__img">
+                <picture>
+                  <source srcset="img/reviews/1.webp" type="image/webp" />
+                  <img src="img/reviews/1.png" alt="img" />
+                </picture>
+              </div>
+
+              <div class="reviews-card__info">
+                <span class="reviews-card__name">Сергей Белоцерковец</span>
+                <a class="reviews-card__btn btn" href="#" target="_blank">
+                  Профиль ВК
+                </a>
+              </div>
+            </div>
+            <div class="reviews-card__right">
+              <p>
+                Эти ребята обратились ко мне с предложением давать мне лиды в
+                моей нише "изготовление корпусной мебель под заказ". По ходу
+                дела увидел: работают чётко, без воды. Лиды дают целевые,
+                один-два в день.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-card">
+            <div class="reviews-card__left">
+              <div class="reviews-card__img">
+                <picture>
+                  <source srcset="img/reviews/2.webp" type="image/webp" />
+                  <img src="img/reviews/2.png" alt="img" />
+                </picture>
+              </div>
+
+              <div class="reviews-card__info">
+                <span class="reviews-card__name">Максим Шокин</span>
+                <a class="reviews-card__btn btn" href="#" target="_blank">
+                  Профиль ВК
+                </a>
+              </div>
+            </div>
+            <div class="reviews-card__right">
+              <p>
+                Пробывал тест, на партнерскую программу, все работает, лиды
+                приходят, просто я еще не научился продавать, а так рекомендую,
+                проверено.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-card">
+            <div class="reviews-card__left">
+              <div class="reviews-card__img">
+                <picture>
+                  <source srcset="img/reviews/1.webp" type="image/webp" />
+                  <img src="img/reviews/1.png" alt="img" />
+                </picture>
+              </div>
+
+              <div class="reviews-card__info">
+                <span class="reviews-card__name">Сергей Белоцерковец</span>
+                <a class="reviews-card__btn btn" href="#" target="_blank">
+                  Профиль ВК
+                </a>
+              </div>
+            </div>
+            <div class="reviews-card__right">
+              <p>
+                Эти ребята обратились ко мне с предложением давать мне лиды в
+                моей нише "изготовление корпусной мебель под заказ". По ходу
+                дела увидел: работают чётко, без воды. Лиды дают целевые,
+                один-два в день.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-card">
+            <div class="reviews-card__left">
+              <div class="reviews-card__img">
+                <picture>
+                  <source srcset="img/reviews/2.webp" type="image/webp" />
+                  <img src="img/reviews/2.png" alt="img" />
+                </picture>
+              </div>
+
+              <div class="reviews-card__info">
+                <span class="reviews-card__name">Максим Шокин</span>
+                <a class="reviews-card__btn btn" href="#" target="_blank">
+                  Профиль ВК
+                </a>
+              </div>
+            </div>
+            <div class="reviews-card__right">
+              <p>
+                Пробывал тест, на партнерскую программу, все работает, лиды
+                приходят, просто я еще не научился продавать, а так рекомендую,
+                проверено.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+        </div>
+        <div class="connect-bg">
+          <section class="request">
+  <section
+    class="request"
+    id="request"
+    style="background-image: url('img/request-bg.jpg')"
+  >
+    <div class="container">
+      <div class="request__top">
+        <h2 class="request__title section-title">
+          <span class="color-accent">Узнайте,</span>
+          <span class="color-gray">как полностью закрыть вопрос</span> <br />
+          с клиентами в вашем бизнесе <br />
+          за ближайший месяц
+        </h2>
+        <p class="request__text">
+          Закажите бесплатный план продвижения, ведь 75% успеха рекламной
+          кампании <br />
+          зависит от правильного выбора канала продвижения
+        </p>
+      </div>
+
+      <div class="request__content">
+        <form class="request__form form-request">
+          <div class="form-request__end">Спасибо! Заявка отправлена</div>
+
+          <div class="form-request__inner">
+            <div class="form-request__progress">
+              <span class="form-request__fill"></span>
+              <div class="form-request__text">
+                Осталось ответить на
+                <p><span class="count-steps"> 5</span> вопросов из 6</p>
+              </div>
+            </div>
+            <div class="form-request__steps">
+              <div class="form-request__step active">
+                <div class="form-request__group">
+                  <label class="form-request__label" for="name"
+                    >Какая у вас ниша? (чем вы занимаетесь)</label
+                  >
+                  <input
+                    class="form-request__input"
+                    id="name"
+                    type="text"
+                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
+                    required
+                  />
+                </div>
+                <div class="form-request__btns-group">
+                  <button type="button" class="form-request__btn btn btn-next">
+                    Продолжить
+                  </button>
+                </div>
+              </div>
+              <div class="form-request__step">
+                <div class="form-request__group">
+                  <label class="form-request__label" for="name"
+                    >Какая у вас ниша?
+                  </label>
+                  <input
+                    class="form-request__input"
+                    id="name"
+                    type="text"
+                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
+                    required
+                  />
+                </div>
+                <div class="form-request__btns-group">
+                  <button type="button" class="form-request__btn btn btn-next">
+                    Продолжить
+                  </button>
+                </div>
+              </div>
+              <div class="form-request__step">
+                <div class="form-request__group">
+                  <label class="form-request__label" for="name"
+                    >Какая у вас ниша? (чем вы занимаетесь)</label
+                  >
+                  <input
+                    class="form-request__input"
+                    id="name"
+                    type="text"
+                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
+                    required
+                  />
+                </div>
+                <div class="form-request__btns-group">
+                  <button type="button" class="form-request__btn btn btn-next">
+                    Продолжить
+                  </button>
+                </div>
+              </div>
+              <div class="form-request__step">
+                <div class="form-request__group">
+                  <label class="form-request__label" for="name"
+                    >Какая у вас ниша? (чем вы занимаетесь)</label
+                  >
+                  <input
+                    class="form-request__input"
+                    id="name"
+                    type="text"
+                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
+                    required
+                  />
+                </div>
+                <div class="form-request__btns-group">
+                  <button type="button" class="form-request__btn btn btn-next">
+                    Продолжить
+                  </button>
+                </div>
+              </div>
+              <div class="form-request__step">
+                <div class="form-request__group">
+                  <label class="form-request__label" for="name"
+                    >Какая у вас ниша? (чем вы занимаетесь)</label
+                  >
+                  <input
+                    class="form-request__input"
+                    id="name"
+                    type="text"
+                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
+                    required
+                  />
+                </div>
+                <div class="form-request__btns-group">
+                  <button type="button" class="form-request__btn btn btn-next">
+                    Продолжить
+                  </button>
+                </div>
+              </div>
+              <div class="form-request__step">
+                <div class="form-request__group">
+                  <label class="form-request__label" for="name"
+                    >Какая у вас ниша? (чем вы занимаетесь)</label
+                  >
+                  <input
+                    class="form-request__input"
+                    id="name"
+                    type="text"
+                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
+                    required
+                  />
+                </div>
+                <div class="form-request__btns-group">
+                  <button
+                    type="button"
+                    class="form-request__btn btn submit-btn"
+                  >
+                    Отправить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</section>
+
+          <section class="contacts" id="contacts">
+  <div class="container">
+    <h2 class="contacts__title">Свяжитесь с нами</h2>
+    <div class="contacts__wrapper">
+      <div class="contacts__left">
+        <div class="contacts__socials">
+          <div class="contacts__icon">
+            <img src="img/phone-orange.png" alt="icon" />
+          </div>
+          <a class="contacts__phone" href="#">+7 (952) 062-27-62</a>
+
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--whatsapp" href="#">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#whatsapp"></use>
+                </svg>
+                WhatsApp
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="#">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+                Telegram
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+                Вконтакте
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--youtube" href="#">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+                Youtube
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--instagram" href="#">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <form class="contacts__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label">Имя</label>
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Введите Ваше имя"
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label">Город и ниша</label>
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Введите Ваш город и нишу"
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label">Телефон</label>
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Введите Ваш контактный телефон"
+          />
+        </div>
+        <div class="form-submit__bottom">
+          <button class="form-submit__btn btn" type="submit">Отправить</button>
+          <p class="form-submit__text">
+            Нажимая кнопку вы даете согласие <br />
+            на
+            <a href="#">обработку персональных данных</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+        </div>
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <span>
+        Индивидуальный предприниматель
+        <small>Комаров Константин Анатольевич</small>
+      </span>
+      <span>ОГРНИП — 321695200013092</span> <span>ИНН — 695206998949</span>
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- Nice Select -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+  </head>
+
+  <body>
+    @include('./components/_popups.html')
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main">
+        <div class="hero-benefits-bg">
+          @include('./components/_hero.html')
+          @include('./components/_benefits.html')
+        </div>
+        @include('./components/_services.html')
+        <div class="why-cases-bg">
+          @include('./components/_why.html')
+          @include('./components/_cases.html')
+        </div>
+        <div class="reviews-reporting-bg">
+          @include('./components/_reporting.html')
+          @include('./components/_advantages.html')
+          @include('./components/_reviews.html')
+        </div>
+        <div class="connect-bg">
+          @include('./components/_request.html')
+          @include('./components/_contacts.html')
+        </div>
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->
