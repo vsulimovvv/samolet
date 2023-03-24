@@ -1,158 +1,271 @@
-<section class="request">
-  <section
-    class="request"
-    id="request"
-    style="background-image: url('img/request-bg.jpg')"
-  >
-    <div class="container">
-      <div class="request__top">
-        <h2 class="request__title section-title">
-          <span class="color-accent">Узнайте,</span>
-          <span class="color-gray">как полностью закрыть вопрос</span> <br />
-          с клиентами в вашем бизнесе <br />
-          за ближайший месяц
-        </h2>
-        <p class="request__text">
-          Закажите бесплатный план продвижения, ведь 75% успеха рекламной
-          кампании <br />
-          зависит от правильного выбора канала продвижения
-        </p>
-      </div>
+<section
+  class="request"
+  id="calc"
+  style="background-image: url('img/request-bg.jpg')"
+>
+  <div class="container">
+    <div class="request__top">
+      <h2 class="request__title section-title">
+        <span class="color-accent">Узнайте,</span>
+        <span class="color-gray">как полностью закрыть вопрос</span> <br />
+        с клиентами в вашем бизнесе <br />
+        за ближайший месяц
+      </h2>
+      <p class="request__text">
+        Закажите бесплатный план продвижения, ведь 75% успеха рекламной кампании
+        <br />
+        зависит от правильного выбора канала продвижения
+      </p>
+    </div>
 
-      <div class="request__content">
-        <form class="request__form form-request">
-          <div class="form-request__end">Спасибо! Заявка отправлена</div>
+    <div class="request__content">
+      <form class="request__form form-request">
+        <div class="form-request__end">Спасибо! Заявка отправлена</div>
 
-          <div class="form-request__inner">
-            <div class="form-request__progress">
-              <span class="form-request__fill"></span>
-              <div class="form-request__text">
-                Осталось ответить на
-                <p><span class="count-steps"> 5</span> вопросов из 6</p>
+        <div class="form-request__inner">
+          <div class="form-request__progress">
+            <span class="form-request__fill"></span>
+            <div class="form-request__text">
+              Осталось ответить на
+              <p>
+                <span class="count-steps"> 5</span> вопросов из
+                <span class="steps-length">6</span>
+              </p>
+            </div>
+          </div>
+          <div class="form-request__steps">
+            <div class="form-request__step active">
+              <div class="form-request__group">
+                <label class="form-request__label"
+                  >Какая у вас ниша? (чем вы занимаетесь)</label
+                >
+                <input
+                  class="form-request__input"
+                  id="name"
+                  type="text"
+                  placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
+                  required
+                />
+              </div>
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
               </div>
             </div>
-            <div class="form-request__steps">
-              <div class="form-request__step active">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша? (чем вы занимаетесь)</label
-                  >
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
-                </div>
-                <div class="form-request__btns-group">
-                  <button type="button" class="form-request__btn btn btn-next">
-                    Продолжить
-                  </button>
-                </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label"
+                  >В каком городе/городах вы работаете?</label
+                >
+                <input
+                  class="form-request__input"
+                  id="name"
+                  type="text"
+                  placeholder=""
+                  required
+                />
               </div>
-              <div class="form-request__step">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша?
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
+              </div>
+            </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label">
+                  Как срочно вам нужны заявки?
+                </label>
+                <div class="form-request__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="term" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> Уже сегодня </span>
                   </label>
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
-                </div>
-                <div class="form-request__btns-group">
-                  <button type="button" class="form-request__btn btn btn-next">
-                    Продолжить
-                  </button>
-                </div>
-              </div>
-              <div class="form-request__step">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша? (чем вы занимаетесь)</label
-                  >
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
-                </div>
-                <div class="form-request__btns-group">
-                  <button type="button" class="form-request__btn btn btn-next">
-                    Продолжить
-                  </button>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="term" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> В ближайшую неделю </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="term" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> В ближайший месяц </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="term" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text">Другой вариант </span>
+                  </label>
                 </div>
               </div>
-              <div class="form-request__step">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша? (чем вы занимаетесь)</label
-                  >
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
-                </div>
-                <div class="form-request__btns-group">
-                  <button type="button" class="form-request__btn btn btn-next">
-                    Продолжить
-                  </button>
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
+              </div>
+            </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label"
+                  >Сколько заявок приходит сейчас в месяц?</label
+                >
+                <div class="form-request__checkboxes">
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__input"
+                      name="quantity"
+                      type="radio"
+                    />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> До 10 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__input"
+                      name="quantity"
+                      type="radio"
+                    />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> До 50 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__input"
+                      name="quantity"
+                      type="radio"
+                    />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> До 100 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__input"
+                      name="quantity"
+                      type="radio"
+                    />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text">Больше 100 </span>
+                  </label>
                 </div>
               </div>
-              <div class="form-request__step">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша? (чем вы занимаетесь)</label
-                  >
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
-                </div>
-                <div class="form-request__btns-group">
-                  <button type="button" class="form-request__btn btn btn-next">
-                    Продолжить
-                  </button>
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
+              </div>
+            </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label"
+                  >Сколько хотели бы дополнительно получать заявок в
+                  месяц?</label
+                >
+                <div class="form-request__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="add" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> 10-50 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="add" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> 50-100 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="add" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> 100-200 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="add" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> Более 200 </span>
+                  </label>
                 </div>
               </div>
-              <div class="form-request__step">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша? (чем вы занимаетесь)</label
-                  >
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
+              </div>
+            </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label">
+                  Сколько сейчас тратите на маркетинг в месяц?
+                </label>
+                <div class="form-request__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> Ничего не трачу </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> До 50 000 рублей </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text">
+                      От 50 000 до 150 000 рублей
+                    </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> Больше 150 000 рублей </span>
+                  </label>
                 </div>
-                <div class="form-request__btns-group">
-                  <button
-                    type="button"
-                    class="form-request__btn btn submit-btn"
-                  >
-                    Отправить
-                  </button>
+              </div>
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
+              </div>
+            </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label" for="name"
+                  >Какой подарок забронировать за вами?</label
+                >
+                <div class="form-request__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text">
+                      5 000 рублей на первый месяц работы
+                    </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"
+                      >Курс по продажам со 112 видеоуроками и 35
+                      инструкциями</span
+                    >
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text">
+                      Анализ репутации компании в интернете
+                    </span>
+                  </label>
                 </div>
+              </div>
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn submit-btn">
+                  Отправить
+                </button>
               </div>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
-  </section>
+  </div>
 </section>

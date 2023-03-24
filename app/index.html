@@ -42,7 +42,7 @@
   </head>
 
   <body>
-    <div class="popup popup--online-booking">
+    <div class="popup popup--order">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -50,43 +50,227 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Онлайн запись</h2>
+      <h2 class="popup__title">Оформить заявку</h2>
       <div class="popup__text">
         <p>Оставьте ваши данные и мы вам перезвоним.</p>
       </div>
 
-      <form class="form-submit">
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="online-name">Имя</label>
+      <form class="form-popup">
+        <div class="form-popup__group">
+          <label class="form-popup__label">Имя *</label>
 
           <input
-            class="form-submit__input"
-            name="name"
-            id="online-name"
+            class="form-popup__input"
             type="text"
             placeholder="Введите ваше имя"
             required
           />
         </div>
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="online-tel">
-            Контактный телефон
-          </label>
+        <div class="form-popup__group">
+          <label class="form-popup__label" for="online-tel"> Телефон * </label>
 
           <input
-            class="form-submit__input"
-            name="tel"
-            id="online-tel"
+            class="form-popup__input"
             type="tel"
             placeholder="+7 (___) ___-__-__"
             required
           />
         </div>
+        <div class="form-popup__group">
+          <label class="form-popup__label" for="online-tel"
+            >Какой у вас бизнес?</label
+          >
 
-        <button class="form-submit__btn btn" type="button">
+          <input class="form-popup__input" type="text" required />
+        </div>
+
+        <button class="form-popup__btn btn" type="button">
           Заказать звонок
         </button>
       </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-vk">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun9-6.userapi.com/impf/c638423/v638423051/5985d/x4JEl5yj3Dw.jpg?size=1440x2160&quality=96&sign=9dc507eb5b6d9a67d2715d887a7785d4&type=album"
+            alt="img"
+          />
+          <span class="popup-review__title">Никита Ваневский</span>
+        </div>
+        <div class="popup-review__text">
+          Ребята большие молодцы! Всегда помогают, подсказывают какую программу
+          лучше запустить! И результаты их работы видны сразу.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-yandex">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun9-58.userapi.com/s/v1/ig2/hjs0z8lRvAvhghVCspbNYBCyxkcNLMFPADUVRmB4N15sgtcvx3rKYtvfZisedIrglbVG_-6yl2vfi8CgOncs5e3v.jpg?size=200x200&quality=96&crop=0,140,1622,1622&ava=1"
+            alt="img"
+          />
+          <span class="popup-review__title"
+            >Светлана Азаренкова (Музашвили)</span
+          >
+        </div>
+        <div class="popup-review__text">
+          Более полугода работаем. Результатами доволен.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-reputation">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun1-21.userapi.com/s/v1/ig1/CYCj1f1RGgrVipZvDAzSqBWMsFR-03Z-SVTcs9IOZqDOrNrIKA6jCaj16201wiraHbMSSPcb.jpg?size=200x200&quality=96&crop=0,295,1114,1114&ava=1"
+            alt=""
+          />
+          <span class="popup-review__title">Андрей Столяров</span>
+        </div>
+        <div class="popup-review__text">
+          Решили вопрос размещением моей компании на картах и геосервисах - в
+          первый же месяц ощутил прирост более 30% посетителей - поверил, что
+          это работает
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-arbitration">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun1-13.userapi.com/s/v1/ig2/G20inz7QbPba-PXLtSEMSg7MZAPZN-x5VCP_0luNTcCiEeTUP2670iNp6rAaRfDOAae5egE2nj4BEfFtixZfAVmK.jpg?size=200x200&quality=95&crop=488,584,1088,1088&ava=1"
+            alt="img"
+          />
+          <span class="popup-review__title">Елена Багдай</span>
+        </div>
+        <div class="popup-review__text">
+          Работаем с Самолетом с осени, и недавно оплатили следующий пакет
+          услуг. Нравится четкость, оперативность, регулярная обратная связь.
+          Активность руководителя - залог постоянного поиска новых путей решения
+          задач и новых направлений в услугах.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-vk-mes">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun1-93.userapi.com/s/v1/ig2/DeaZy9Cel-lZxV1TBn_WS4-KnRNHl4AHsqxkAoKvEGmE0ZlgzXfJVBHLFLTyjI2-jPhJltpM14XfZU8BMnzvnckh.jpg?size=400x400&quality=96&crop=0,315,1440,1440&ava=1"
+            alt="img"
+          />
+          <span class="popup-review__title">Максим Шокин</span>
+        </div>
+        <div class="popup-review__text">
+          Пробовал тест, на партнерскую программу, все работает, лиды приходят,
+          рекомендую, проверено.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-whatsapp-mes">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun1-94.userapi.com/s/v1/ig2/BFttXodOMqFeesnGgpYQprF2kDDLEnADSc8jdOeIEFd-yJA9-TahsRi8sKD-O86Ec4cX9gPG7uHKRL9_EnN4HnNB.jpg?size=200x200&quality=96&crop=90,3,1916,1916&ava=1"
+            alt="img"
+          />
+          <span class="popup-review__title">Евгений Шорохов</span>
+        </div>
+        <div class="popup-review__text">
+          С Константином, работаю около полутора месяцев. Наше общение,
+          практически сразу стало доверительным, мы быстро нашли общий язык. Все
+          возникающие у меня вопросы, по поводу работы, решались конструктивно и
+          в кратчайшие сроки. Константин, профессионал своего дела, толк в своей
+          работе знает! Рекомендую!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-tg-mes">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun1-93.userapi.com/s/v1/ig2/F5JBeKZfXeklzLUq9EuqstLCcR8Hi7RuF_sQgRyiOqfRR7pRQVFK9By4VaknMvgkkgVqKnxCKE_qNIydP4e7M_Rc.jpg?size=400x400&quality=96&crop=3,3,2151,2151&ava=1"
+            alt="img"
+          />
+          <span class="popup-review__title">Иван Кудин</span>
+        </div>
+        <div class="popup-review__text">
+          Обратился к ребятам, чтобы они мне нагнали лидов на мероприятие,
+          хорошая конверсия, лид мне стоил порядка 300 рублей, что в принципе в
+          мою математику входит, продолжаем с ними работать
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -139,11 +323,6 @@
         </a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link link-anchor" href="#calc">
-          <span>Калькулятор </span>
-        </a>
-      </li>
-      <li class="mobile-menu__item">
         <a class="mobile-menu__link link-anchor" href="#cases"
           ><span>Кейсы</span></a
         >
@@ -154,11 +333,15 @@
         </a>
       </li>
       <li class="mobile-menu__item">
+        <a class="mobile-menu__link link-anchor" href="#calc">
+          <span>Калькулятор </span>
+        </a>
+      </li>
+      <li class="mobile-menu__item">
         <a class="mobile-menu__link link-anchor" href="#blog">
           <span>Блог</span>
         </a>
       </li>
-
       <li class="mobile-menu__item">
         <a class="mobile-menu__link link-anchor" href="#contacts">
           <span>Контакты</span>
@@ -180,13 +363,13 @@
               <a class="menu__link link-anchor" href="#services">Услуги</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link link-anchor" href="#calc">Калькулятор</a>
-            </li>
-            <li class="menu__item">
               <a class="menu__link link-anchor" href="#cases">Кейсы</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link-anchor" href="#reviews">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link-anchor" href="#calc">Калькулятор</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link-anchor" href="#blog">Блог</a>
@@ -440,14 +623,14 @@
               Вконтакте и наберем аудиторию.
             </p>
             <div class="services-card__btns">
-              <button class="services-card__btn btn" type="button">
+              <button class="services-card__btn btn btn-order" type="button">
                 Заказать
               </button>
               <button
-                class="services-card__btn btn btn--transparent"
+                class="services-card__btn btn btn--transparent btn-review-vk"
                 type="button"
               >
-                Подробнее
+                Читать отзыв
               </button>
             </div>
           </div>
@@ -471,11 +654,11 @@
               создадим бесплатно сайт) из рекламной системы Яндекс.
             </p>
             <div class="services-card__btns">
-              <button class="services-card__btn btn" type="button">
+              <button class="services-card__btn btn btn-order" type="button">
                 Заказать
               </button>
               <button
-                class="services-card__btn btn btn--transparent"
+                class="services-card__btn btn btn--transparent btn-review-yandex"
                 type="button"
               >
                 Подробнее
@@ -490,23 +673,20 @@
             <img src="img/services-icons/star.png" alt="img" />
           </div>
           <div class="services-card__top">
-            <h3 class="services-card__title">
-              Таргетированная <br />
-              реклама Вконтакте
-            </h3>
-            <span class="services-card__number">01</span>
+            <h3 class="services-card__title">Управление репутацией</h3>
+            <span class="services-card__number">03</span>
           </div>
           <div class="services-card__body">
             <p class="services-card__text">
-              Привлечем клиентов по минимальной цене. Раскрутим профили
-              Вконтакте и наберем аудиторию.
+              Размещение вашей организации на картах гугл, тугис, яндекс Работа
+              с действующими отзывами.
             </p>
             <div class="services-card__btns">
-              <button class="services-card__btn btn" type="button">
+              <button class="services-card__btn btn btn-order" type="button">
                 Заказать
               </button>
               <button
-                class="services-card__btn btn btn--transparent"
+                class="services-card__btn btn btn--transparent btn-review-reputation"
                 type="button"
               >
                 Подробнее
@@ -522,22 +702,22 @@
           </div>
           <div class="services-card__top">
             <h3 class="services-card__title">
-              Контекстная реклама <br />
-              Яндекс
+              Оплата за заявку <br />
+              (арбитраж)
             </h3>
-            <span class="services-card__number">02</span>
+            <span class="services-card__number">04</span>
           </div>
           <div class="services-card__body">
             <p class="services-card__text">
-              Эффективная настройка контекстной рекламы на ваш сайт (или
-              создадим бесплатно сайт) из рекламной системы Яндекс.
+              Продвигаем интернет-магазины и прочие продукты всеми разрешёнными
+              способами.
             </p>
             <div class="services-card__btns">
-              <button class="services-card__btn btn" type="button">
+              <button class="services-card__btn btn btn-order" type="button">
                 Заказать
               </button>
               <button
-                class="services-card__btn btn btn--transparent"
+                class="services-card__btn btn btn--transparent btn-review-arbitration"
                 type="button"
               >
                 Подробнее
@@ -553,22 +733,21 @@
           </div>
           <div class="services-card__top">
             <h3 class="services-card__title">
-              Контекстная реклама <br />
-              Яндекс
+              Рассылка сообщений <br />
+              в Вконтакте
             </h3>
-            <span class="services-card__number">02</span>
+            <span class="services-card__number">05</span>
           </div>
           <div class="services-card__body">
             <p class="services-card__text">
-              Эффективная настройка контекстной рекламы на ваш сайт (или
-              создадим бесплатно сайт) из рекламной системы Яндекс.
+              Занимаемся лидогенерацией, через рассылки сообщений в вконтакте.
             </p>
             <div class="services-card__btns">
-              <button class="services-card__btn btn" type="button">
+              <button class="services-card__btn btn btn-order " type="button">
                 Заказать
               </button>
               <button
-                class="services-card__btn btn btn--transparent"
+                class="services-card__btn btn btn--transparent btn-review-vk-mes"
                 type="button"
               >
                 Подробнее
@@ -584,22 +763,21 @@
           </div>
           <div class="services-card__top">
             <h3 class="services-card__title">
-              Контекстная реклама <br />
-              Яндекс
+              Рассылка сообщений <br />
+              в WhatsApp
             </h3>
-            <span class="services-card__number">02</span>
+            <span class="services-card__number">06</span>
           </div>
           <div class="services-card__body">
             <p class="services-card__text">
-              Эффективная настройка контекстной рекламы на ваш сайт (или
-              создадим бесплатно сайт) из рекламной системы Яндекс.
+              Занимаемся лидогенерацией, через рассылки сообщений в WhatsApp.
             </p>
             <div class="services-card__btns">
-              <button class="services-card__btn btn" type="button">
+              <button class="services-card__btn btn btn-order" type="button">
                 Заказать
               </button>
               <button
-                class="services-card__btn btn btn--transparent"
+                class="services-card__btn btn btn--transparent btn-review-whatsapp-mes"
                 type="button"
               >
                 Подробнее
@@ -615,22 +793,21 @@
           </div>
           <div class="services-card__top">
             <h3 class="services-card__title">
-              Контекстная реклама <br />
-              Яндекс
+              Рассылка сообщений <br />
+              в Telegram
             </h3>
-            <span class="services-card__number">02</span>
+            <span class="services-card__number">07</span>
           </div>
           <div class="services-card__body">
             <p class="services-card__text">
-              Эффективная настройка контекстной рекламы на ваш сайт (или
-              создадим бесплатно сайт) из рекламной системы Яндекс.
+              Занимаемся лидогенерацией, через рассылки сообщений в Telegram.
             </p>
             <div class="services-card__btns">
-              <button class="services-card__btn btn" type="button">
+              <button class="services-card__btn btn btn-order" type="button">
                 Заказать
               </button>
               <button
-                class="services-card__btn btn btn--transparent"
+                class="services-card__btn btn btn--transparent btn-review-tg-mes"
                 type="button"
               >
                 Подробнее
@@ -1269,10 +1446,15 @@
         <li class="videos__slide swiper-slide">
           <div class="videos-card">
             <div class="videos-card__top">
-              <img
-                src="https://images.unsplash.com/photo-1678933964986-22090877ccf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="img"
-              />
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/G66FnDSUJZA?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
             <span class="videos-card__name">
               Маркетинг для ниши кухни на заказ в Москве
@@ -1282,52 +1464,55 @@
         <li class="videos__slide swiper-slide">
           <div class="videos-card">
             <div class="videos-card__top">
-              <img
-                src="https://images.unsplash.com/photo-1678933964986-22090877ccf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="img"
-              />
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/o65QaDx5ASI?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
             <span class="videos-card__name">
-              Маркетинг для ниши кухни на заказ в Москве
+              Окупили рекламу на 900%. Продвижение мебельного бизнеса через
+              таргет в инстаграм.
             </span>
           </div>
         </li>
         <li class="videos__slide swiper-slide">
           <div class="videos-card">
             <div class="videos-card__top">
-              <img
-                src="https://images.unsplash.com/photo-1678933964986-22090877ccf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="img"
-              />
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/aEbuTvgww0U?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
             <span class="videos-card__name">
-              Маркетинг для ниши кухни на заказ в Москве
+              Привлечение клиентов в нишу кухни на заказ
             </span>
           </div>
         </li>
         <li class="videos__slide swiper-slide">
           <div class="videos-card">
             <div class="videos-card__top">
-              <img
-                src="https://images.unsplash.com/photo-1678933964986-22090877ccf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="img"
-              />
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/xOgzzfzMwCQ?controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
             <span class="videos-card__name">
-              Маркетинг для ниши кухни на заказ в Москве
-            </span>
-          </div>
-        </li>
-        <li class="videos__slide swiper-slide">
-          <div class="videos-card">
-            <div class="videos-card__top">
-              <img
-                src="https://images.unsplash.com/photo-1678933964986-22090877ccf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="img"
-              />
-            </div>
-            <span class="videos-card__name">
-              Маркетинг для ниши кухни на заказ в Москве
+              Привлечение клиентов в нишу мебель на заказ
             </span>
           </div>
         </li>
@@ -1355,7 +1540,11 @@
 
               <div class="reviews-card__info">
                 <span class="reviews-card__name">Сергей Белоцерковец</span>
-                <a class="reviews-card__btn btn" href="#" target="_blank">
+                <a
+                  class="reviews-card__btn btn"
+                  href="https://vk.com/id204313205"
+                  target="_blank"
+                >
                   Профиль ВК
                 </a>
               </div>
@@ -1375,6 +1564,43 @@
             <div class="reviews-card__left">
               <div class="reviews-card__img">
                 <picture>
+                  <source
+                    srcset="
+                      https://sun1-21.userapi.com/s/v1/ig1/CYCj1f1RGgrVipZvDAzSqBWMsFR-03Z-SVTcs9IOZqDOrNrIKA6jCaj16201wiraHbMSSPcb.jpg?size=200x200&quality=96&crop=0,295,1114,1114&ava=1
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="https://sun1-21.userapi.com/s/v1/ig1/CYCj1f1RGgrVipZvDAzSqBWMsFR-03Z-SVTcs9IOZqDOrNrIKA6jCaj16201wiraHbMSSPcb.jpg?size=200x200&quality=96&crop=0,295,1114,1114&ava=1"
+                    alt="img"
+                  />
+                </picture>
+              </div>
+
+              <div class="reviews-card__info">
+                <span class="reviews-card__name">Андрей Столяров</span>
+                <a
+                  class="reviews-card__btn btn"
+                  href="https://vk.com/pro_rider"
+                  target="_blank"
+                >
+                  Профиль ВК
+                </a>
+              </div>
+            </div>
+            <div class="reviews-card__right">
+              <p>
+                Смело рекомендую! Горячие заявки, за смешные деньги. Спасибо вам
+                большое, молодцы.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-card">
+            <div class="reviews-card__left">
+              <div class="reviews-card__img">
+                <picture>
                   <source srcset="img/reviews/2.webp" type="image/webp" />
                   <img src="img/reviews/2.png" alt="img" />
                 </picture>
@@ -1382,7 +1608,11 @@
 
               <div class="reviews-card__info">
                 <span class="reviews-card__name">Максим Шокин</span>
-                <a class="reviews-card__btn btn" href="#" target="_blank">
+                <a
+                  class="reviews-card__btn btn"
+                  href="https://vk.com/shokinmax"
+                  target="_blank"
+                >
                   Профиль ВК
                 </a>
               </div>
@@ -1401,24 +1631,34 @@
             <div class="reviews-card__left">
               <div class="reviews-card__img">
                 <picture>
-                  <source srcset="img/reviews/1.webp" type="image/webp" />
-                  <img src="img/reviews/1.png" alt="img" />
+                  <source
+                    srcset="
+                      https://sun9-47.userapi.com/s/v1/ig2/T43cIxtlBqHp-OL3Bq6Ooflc0Fs6MScG_oHjEn83UrI56mUZULPRUhNXcRut04xQS1QrICdPhmFplxX1pFGY6PoF.jpg?size=400x400&quality=95&crop=0,983,1108,1108&ava=1
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="https://sun9-47.userapi.com/s/v1/ig2/T43cIxtlBqHp-OL3Bq6Ooflc0Fs6MScG_oHjEn83UrI56mUZULPRUhNXcRut04xQS1QrICdPhmFplxX1pFGY6PoF.jpg?size=400x400&quality=95&crop=0,983,1108,1108&ava=1"
+                    alt="img"
+                  />
                 </picture>
               </div>
 
               <div class="reviews-card__info">
-                <span class="reviews-card__name">Сергей Белоцерковец</span>
-                <a class="reviews-card__btn btn" href="#" target="_blank">
+                <span class="reviews-card__name">Владимир Пономаренко</span>
+                <a
+                  class="reviews-card__btn btn"
+                  href="https://vk.com/id24649571"
+                  target="_blank"
+                >
                   Профиль ВК
                 </a>
               </div>
             </div>
             <div class="reviews-card__right">
               <p>
-                Эти ребята обратились ко мне с предложением давать мне лиды в
-                моей нише "изготовление корпусной мебель под заказ". По ходу
-                дела увидел: работают чётко, без воды. Лиды дают целевые,
-                один-два в день.
+                Хороший сервис, дешево и качественно, ребята молодцы! Дешевле
+                рекламы я не встречал
               </p>
             </div>
           </div>
@@ -1428,23 +1668,34 @@
             <div class="reviews-card__left">
               <div class="reviews-card__img">
                 <picture>
-                  <source srcset="img/reviews/2.webp" type="image/webp" />
-                  <img src="img/reviews/2.png" alt="img" />
+                  <source
+                    srcset="
+                      https://sun9-52.userapi.com/s/v1/ig2/d8YZ5wRhsCNOLq5YwB_K0GnueaQTtVV57wwd61sbVynM2-n6bsoAr4pQ7W6KSUr1WhhaLuw7TOj2uKyRvJ4SEk_i.jpg?size=200x200&quality=96&crop=2,21,1022,1022&ava=1
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="https://sun9-52.userapi.com/s/v1/ig2/d8YZ5wRhsCNOLq5YwB_K0GnueaQTtVV57wwd61sbVynM2-n6bsoAr4pQ7W6KSUr1WhhaLuw7TOj2uKyRvJ4SEk_i.jpg?size=200x200&quality=96&crop=2,21,1022,1022&ava=1"
+                    alt="img"
+                  />
                 </picture>
               </div>
 
               <div class="reviews-card__info">
-                <span class="reviews-card__name">Максим Шокин</span>
-                <a class="reviews-card__btn btn" href="#" target="_blank">
+                <span class="reviews-card__name">Ильдар Бадиков</span>
+                <a
+                  class="reviews-card__btn btn"
+                  href="https://vk.com/vasha_mebel1006"
+                  target="_blank"
+                >
                   Профиль ВК
                 </a>
               </div>
             </div>
             <div class="reviews-card__right">
               <p>
-                Пробывал тест, на партнерскую программу, все работает, лиды
-                приходят, просто я еще не научился продавать, а так рекомендую,
-                проверено.
+                Работа качественная, за такие деньги это супер. Только плюс за
+                работу. Терзали сомнения но они были напрасны. Рекомендую.
               </p>
             </div>
           </div>
@@ -1454,51 +1705,32 @@
             <div class="reviews-card__left">
               <div class="reviews-card__img">
                 <picture>
-                  <source srcset="img/reviews/1.webp" type="image/webp" />
-                  <img src="img/reviews/1.png" alt="img" />
+                  <source
+                    srcset="
+                      https://sun9-6.userapi.com/s/v1/if1/sAFGFxyPQ3SgE8rfWqf5z7_6Xc8fwGgd4R_FuGrF8ytvSSJ1ojk1Fplj3oPKFXwIwJx0OJzQ.jpg?size=200x200&quality=96&crop=288,64,735,735&ava=1
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="https://sun9-6.userapi.com/s/v1/if1/sAFGFxyPQ3SgE8rfWqf5z7_6Xc8fwGgd4R_FuGrF8ytvSSJ1ojk1Fplj3oPKFXwIwJx0OJzQ.jpg?size=200x200&quality=96&crop=288,64,735,735&ava=1"
+                    alt="img"
+                  />
                 </picture>
               </div>
 
               <div class="reviews-card__info">
-                <span class="reviews-card__name">Сергей Белоцерковец</span>
-                <a class="reviews-card__btn btn" href="#" target="_blank">
+                <span class="reviews-card__name">Никита Ваневский</span>
+                <a
+                  class="reviews-card__btn btn"
+                  href="https://vk.com/prooover"
+                  target="_blank"
+                >
                   Профиль ВК
                 </a>
               </div>
             </div>
             <div class="reviews-card__right">
-              <p>
-                Эти ребята обратились ко мне с предложением давать мне лиды в
-                моей нише "изготовление корпусной мебель под заказ". По ходу
-                дела увидел: работают чётко, без воды. Лиды дают целевые,
-                один-два в день.
-              </p>
-            </div>
-          </div>
-        </li>
-        <li class="reviews__slide swiper-slide">
-          <div class="reviews-card">
-            <div class="reviews-card__left">
-              <div class="reviews-card__img">
-                <picture>
-                  <source srcset="img/reviews/2.webp" type="image/webp" />
-                  <img src="img/reviews/2.png" alt="img" />
-                </picture>
-              </div>
-
-              <div class="reviews-card__info">
-                <span class="reviews-card__name">Максим Шокин</span>
-                <a class="reviews-card__btn btn" href="#" target="_blank">
-                  Профиль ВК
-                </a>
-              </div>
-            </div>
-            <div class="reviews-card__right">
-              <p>
-                Пробывал тест, на партнерскую программу, все работает, лиды
-                приходят, просто я еще не научился продавать, а так рекомендую,
-                проверено.
-              </p>
+              <p>Более полугода работаем. Результатами доволен. 👍🏻</p>
             </div>
           </div>
         </li>
@@ -1511,163 +1743,276 @@
 
         </div>
         <div class="connect-bg">
-          <section class="request">
-  <section
-    class="request"
-    id="request"
-    style="background-image: url('img/request-bg.jpg')"
-  >
-    <div class="container">
-      <div class="request__top">
-        <h2 class="request__title section-title">
-          <span class="color-accent">Узнайте,</span>
-          <span class="color-gray">как полностью закрыть вопрос</span> <br />
-          с клиентами в вашем бизнесе <br />
-          за ближайший месяц
-        </h2>
-        <p class="request__text">
-          Закажите бесплатный план продвижения, ведь 75% успеха рекламной
-          кампании <br />
-          зависит от правильного выбора канала продвижения
-        </p>
-      </div>
+          <section
+  class="request"
+  id="calc"
+  style="background-image: url('img/request-bg.jpg')"
+>
+  <div class="container">
+    <div class="request__top">
+      <h2 class="request__title section-title">
+        <span class="color-accent">Узнайте,</span>
+        <span class="color-gray">как полностью закрыть вопрос</span> <br />
+        с клиентами в вашем бизнесе <br />
+        за ближайший месяц
+      </h2>
+      <p class="request__text">
+        Закажите бесплатный план продвижения, ведь 75% успеха рекламной кампании
+        <br />
+        зависит от правильного выбора канала продвижения
+      </p>
+    </div>
 
-      <div class="request__content">
-        <form class="request__form form-request">
-          <div class="form-request__end">Спасибо! Заявка отправлена</div>
+    <div class="request__content">
+      <form class="request__form form-request">
+        <div class="form-request__end">Спасибо! Заявка отправлена</div>
 
-          <div class="form-request__inner">
-            <div class="form-request__progress">
-              <span class="form-request__fill"></span>
-              <div class="form-request__text">
-                Осталось ответить на
-                <p><span class="count-steps"> 5</span> вопросов из 6</p>
+        <div class="form-request__inner">
+          <div class="form-request__progress">
+            <span class="form-request__fill"></span>
+            <div class="form-request__text">
+              Осталось ответить на
+              <p>
+                <span class="count-steps"> 5</span> вопросов из
+                <span class="steps-length">6</span>
+              </p>
+            </div>
+          </div>
+          <div class="form-request__steps">
+            <div class="form-request__step active">
+              <div class="form-request__group">
+                <label class="form-request__label"
+                  >Какая у вас ниша? (чем вы занимаетесь)</label
+                >
+                <input
+                  class="form-request__input"
+                  id="name"
+                  type="text"
+                  placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
+                  required
+                />
+              </div>
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
               </div>
             </div>
-            <div class="form-request__steps">
-              <div class="form-request__step active">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша? (чем вы занимаетесь)</label
-                  >
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
-                </div>
-                <div class="form-request__btns-group">
-                  <button type="button" class="form-request__btn btn btn-next">
-                    Продолжить
-                  </button>
-                </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label"
+                  >В каком городе/городах вы работаете?</label
+                >
+                <input
+                  class="form-request__input"
+                  id="name"
+                  type="text"
+                  placeholder=""
+                  required
+                />
               </div>
-              <div class="form-request__step">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша?
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
+              </div>
+            </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label">
+                  Как срочно вам нужны заявки?
+                </label>
+                <div class="form-request__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="term" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> Уже сегодня </span>
                   </label>
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
-                </div>
-                <div class="form-request__btns-group">
-                  <button type="button" class="form-request__btn btn btn-next">
-                    Продолжить
-                  </button>
-                </div>
-              </div>
-              <div class="form-request__step">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша? (чем вы занимаетесь)</label
-                  >
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
-                </div>
-                <div class="form-request__btns-group">
-                  <button type="button" class="form-request__btn btn btn-next">
-                    Продолжить
-                  </button>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="term" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> В ближайшую неделю </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="term" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> В ближайший месяц </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="term" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text">Другой вариант </span>
+                  </label>
                 </div>
               </div>
-              <div class="form-request__step">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша? (чем вы занимаетесь)</label
-                  >
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
-                </div>
-                <div class="form-request__btns-group">
-                  <button type="button" class="form-request__btn btn btn-next">
-                    Продолжить
-                  </button>
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
+              </div>
+            </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label"
+                  >Сколько заявок приходит сейчас в месяц?</label
+                >
+                <div class="form-request__checkboxes">
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__input"
+                      name="quantity"
+                      type="radio"
+                    />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> До 10 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__input"
+                      name="quantity"
+                      type="radio"
+                    />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> До 50 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__input"
+                      name="quantity"
+                      type="radio"
+                    />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> До 100 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input
+                      class="checkbox__input"
+                      name="quantity"
+                      type="radio"
+                    />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text">Больше 100 </span>
+                  </label>
                 </div>
               </div>
-              <div class="form-request__step">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша? (чем вы занимаетесь)</label
-                  >
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
-                </div>
-                <div class="form-request__btns-group">
-                  <button type="button" class="form-request__btn btn btn-next">
-                    Продолжить
-                  </button>
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
+              </div>
+            </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label"
+                  >Сколько хотели бы дополнительно получать заявок в
+                  месяц?</label
+                >
+                <div class="form-request__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="add" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> 10-50 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="add" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> 50-100 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="add" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> 100-200 </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="add" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> Более 200 </span>
+                  </label>
                 </div>
               </div>
-              <div class="form-request__step">
-                <div class="form-request__group">
-                  <label class="form-request__label" for="name"
-                    >Какая у вас ниша? (чем вы занимаетесь)</label
-                  >
-                  <input
-                    class="form-request__input"
-                    id="name"
-                    type="text"
-                    placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
-                    required
-                  />
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
+              </div>
+            </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label">
+                  Сколько сейчас тратите на маркетинг в месяц?
+                </label>
+                <div class="form-request__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> Ничего не трачу </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> До 50 000 рублей </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text">
+                      От 50 000 до 150 000 рублей
+                    </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"> Больше 150 000 рублей </span>
+                  </label>
                 </div>
-                <div class="form-request__btns-group">
-                  <button
-                    type="button"
-                    class="form-request__btn btn submit-btn"
-                  >
-                    Отправить
-                  </button>
+              </div>
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn btn-next">
+                  Продолжить
+                </button>
+              </div>
+            </div>
+            <div class="form-request__step">
+              <div class="form-request__group">
+                <label class="form-request__label" for="name"
+                  >Какой подарок забронировать за вами?</label
+                >
+                <div class="form-request__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text">
+                      5 000 рублей на первый месяц работы
+                    </span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text"
+                      >Курс по продажам со 112 видеоуроками и 35
+                      инструкциями</span
+                    >
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" name="spend" type="radio" />
+                    <span class="checkbox__box"></span>
+                    <span class="checkbox__text">
+                      Анализ репутации компании в интернете
+                    </span>
+                  </label>
                 </div>
+              </div>
+              <div class="form-request__btns-group">
+                <button type="button" class="form-request__btn btn submit-btn">
+                  Отправить
+                </button>
               </div>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
-  </section>
+  </div>
 </section>
 
           <section class="contacts" id="contacts">
@@ -1683,39 +2028,59 @@
 
           <ul class="socials">
             <li class="socials__item">
-              <a class="socials__link socials__link--whatsapp" href="#">
-                <svg class="">
+              <a
+                class="socials__link socials__link--whatsapp"
+                href="https://wa.me/79520622762?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D0%BF%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%2C%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83%20%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%B2%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81"
+                target="_blank"
+              >
+                <svg>
                   <use xlink:href="img/sprite.svg#whatsapp"></use>
                 </svg>
                 WhatsApp
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--telegram" href="#">
-                <svg class="">
+              <a
+                class="socials__link socials__link--telegram"
+                href="https://t.me/samoletmarketing"
+                target="_blank"
+              >
+                <svg>
                   <use xlink:href="img/sprite.svg#telegram"></use>
                 </svg>
                 Telegram
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--vk" href="#">
-                <svg class="">
+              <a
+                class="socials__link socials__link--vk"
+                href="https://vk.com/komarovmarketing"
+                target="_blank"
+              >
+                <svg>
                   <use xlink:href="img/sprite.svg#vk"></use>
                 </svg>
                 Вконтакте
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--youtube" href="#">
-                <svg class="">
+              <a
+                class="socials__link socials__link--youtube"
+                href="https://www.youtube.com/@komarovmarketing"
+                target="_blank"
+              >
+                <svg>
                   <use xlink:href="img/sprite.svg#youtube"></use>
                 </svg>
                 Youtube
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--instagram" href="#">
+              <a
+                class="socials__link socials__link--instagram"
+                href="https://www.instagram.com/samoletmarketing/"
+                target="_blank"
+              >
                 <svg class="">
                   <use xlink:href="img/sprite.svg#instagram"></use>
                 </svg>
@@ -1773,7 +2138,12 @@
         <small>Комаров Константин Анатольевич</small>
       </span>
       <span>ОГРНИП — 321695200013092</span> <span>ИНН — 695206998949</span>
-      <a href="#">Политика конфиденциальности</a>
+      <a
+        href="https://docs.google.com/document/d/1jJlOsOkTqTw0THYSFyIn5z8rxZeKy4Bp7qRaKwVOfoA/edit?usp=sharing"
+        target="_blank"
+      >
+        Политика конфиденциальности
+      </a>
     </div>
   </div>
 </footer>
@@ -1810,11 +2180,3 @@
 
   </body>
 </html>
-
-<!-- <label class="checkbox">
-  <input class="checkbox__input" type="checkbox" required />
-  <span class="checkbox__box"></span>
-  <span class="checkbox__text">
-    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
-  </span> 
-</label> -->

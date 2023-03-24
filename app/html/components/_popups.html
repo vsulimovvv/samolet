@@ -1,4 +1,4 @@
-<div class="popup popup--online-booking">
+<div class="popup popup--order">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -6,43 +6,227 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Онлайн запись</h2>
+      <h2 class="popup__title">Оформить заявку</h2>
       <div class="popup__text">
         <p>Оставьте ваши данные и мы вам перезвоним.</p>
       </div>
 
-      <form class="form-submit">
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="online-name">Имя</label>
+      <form class="form-popup">
+        <div class="form-popup__group">
+          <label class="form-popup__label">Имя *</label>
 
           <input
-            class="form-submit__input"
-            name="name"
-            id="online-name"
+            class="form-popup__input"
             type="text"
             placeholder="Введите ваше имя"
             required
           />
         </div>
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="online-tel">
-            Контактный телефон
-          </label>
+        <div class="form-popup__group">
+          <label class="form-popup__label" for="online-tel"> Телефон * </label>
 
           <input
-            class="form-submit__input"
-            name="tel"
-            id="online-tel"
+            class="form-popup__input"
             type="tel"
             placeholder="+7 (___) ___-__-__"
             required
           />
         </div>
+        <div class="form-popup__group">
+          <label class="form-popup__label" for="online-tel"
+            >Какой у вас бизнес?</label
+          >
 
-        <button class="form-submit__btn btn" type="button">
+          <input class="form-popup__input" type="text" required />
+        </div>
+
+        <button class="form-popup__btn btn" type="button">
           Заказать звонок
         </button>
       </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-vk">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun9-6.userapi.com/impf/c638423/v638423051/5985d/x4JEl5yj3Dw.jpg?size=1440x2160&quality=96&sign=9dc507eb5b6d9a67d2715d887a7785d4&type=album"
+            alt="img"
+          />
+          <span class="popup-review__title">Никита Ваневский</span>
+        </div>
+        <div class="popup-review__text">
+          Ребята большие молодцы! Всегда помогают, подсказывают какую программу
+          лучше запустить! И результаты их работы видны сразу.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-yandex">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun9-58.userapi.com/s/v1/ig2/hjs0z8lRvAvhghVCspbNYBCyxkcNLMFPADUVRmB4N15sgtcvx3rKYtvfZisedIrglbVG_-6yl2vfi8CgOncs5e3v.jpg?size=200x200&quality=96&crop=0,140,1622,1622&ava=1"
+            alt="img"
+          />
+          <span class="popup-review__title"
+            >Светлана Азаренкова (Музашвили)</span
+          >
+        </div>
+        <div class="popup-review__text">
+          Более полугода работаем. Результатами доволен.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-reputation">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun1-21.userapi.com/s/v1/ig1/CYCj1f1RGgrVipZvDAzSqBWMsFR-03Z-SVTcs9IOZqDOrNrIKA6jCaj16201wiraHbMSSPcb.jpg?size=200x200&quality=96&crop=0,295,1114,1114&ava=1"
+            alt=""
+          />
+          <span class="popup-review__title">Андрей Столяров</span>
+        </div>
+        <div class="popup-review__text">
+          Решили вопрос размещением моей компании на картах и геосервисах - в
+          первый же месяц ощутил прирост более 30% посетителей - поверил, что
+          это работает
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-arbitration">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun1-13.userapi.com/s/v1/ig2/G20inz7QbPba-PXLtSEMSg7MZAPZN-x5VCP_0luNTcCiEeTUP2670iNp6rAaRfDOAae5egE2nj4BEfFtixZfAVmK.jpg?size=200x200&quality=95&crop=488,584,1088,1088&ava=1"
+            alt="img"
+          />
+          <span class="popup-review__title">Елена Багдай</span>
+        </div>
+        <div class="popup-review__text">
+          Работаем с Самолетом с осени, и недавно оплатили следующий пакет
+          услуг. Нравится четкость, оперативность, регулярная обратная связь.
+          Активность руководителя - залог постоянного поиска новых путей решения
+          задач и новых направлений в услугах.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-vk-mes">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun1-93.userapi.com/s/v1/ig2/DeaZy9Cel-lZxV1TBn_WS4-KnRNHl4AHsqxkAoKvEGmE0ZlgzXfJVBHLFLTyjI2-jPhJltpM14XfZU8BMnzvnckh.jpg?size=400x400&quality=96&crop=0,315,1440,1440&ava=1"
+            alt="img"
+          />
+          <span class="popup-review__title">Максим Шокин</span>
+        </div>
+        <div class="popup-review__text">
+          Пробовал тест, на партнерскую программу, все работает, лиды приходят,
+          рекомендую, проверено.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-whatsapp-mes">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun1-94.userapi.com/s/v1/ig2/BFttXodOMqFeesnGgpYQprF2kDDLEnADSc8jdOeIEFd-yJA9-TahsRi8sKD-O86Ec4cX9gPG7uHKRL9_EnN4HnNB.jpg?size=200x200&quality=96&crop=90,3,1916,1916&ava=1"
+            alt="img"
+          />
+          <span class="popup-review__title">Евгений Шорохов</span>
+        </div>
+        <div class="popup-review__text">
+          С Константином, работаю около полутора месяцев. Наше общение,
+          практически сразу стало доверительным, мы быстро нашли общий язык. Все
+          возникающие у меня вопросы, по поводу работы, решались конструктивно и
+          в кратчайшие сроки. Константин, профессионал своего дела, толк в своей
+          работе знает! Рекомендую!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--review-tg-mes">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <div class="popup-review">
+        <div class="popup-review__top">
+          <img
+            src="https://sun1-93.userapi.com/s/v1/ig2/F5JBeKZfXeklzLUq9EuqstLCcR8Hi7RuF_sQgRyiOqfRR7pRQVFK9By4VaknMvgkkgVqKnxCKE_qNIydP4e7M_Rc.jpg?size=400x400&quality=96&crop=3,3,2151,2151&ava=1"
+            alt="img"
+          />
+          <span class="popup-review__title">Иван Кудин</span>
+        </div>
+        <div class="popup-review__text">
+          Обратился к ребятам, чтобы они мне нагнали лидов на мероприятие,
+          хорошая конверсия, лид мне стоил порядка 300 рублей, что в принципе в
+          мою математику входит, продолжаем с ними работать
+        </div>
+      </div>
     </div>
   </div>
 </div>
