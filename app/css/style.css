@@ -3986,6 +3986,10 @@ a {
     margin-top: 20px;
   }
 }
+.form-request__checkboxes .checkbox {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 .form-request__checkboxes .checkbox__text {
   font-size: 16px;
   text-align: left;

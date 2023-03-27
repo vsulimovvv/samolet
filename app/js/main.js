@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
   // * ===== Mask input
   $('input[type="tel"]').mask('+7 (999) 999-99-99');
-  //   // * ===== Nice Select
-  //   // $('select').niceSelect();
+  // * ===== Nice Select
+  // $('select').niceSelect();
 
   // * ===== Scroll anchor
   (function scrollAnchor() {
@@ -98,9 +98,14 @@ window.addEventListener('DOMContentLoaded', () => {
       stepsCount.textContent = formSteps.length;
 
       submitBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        formEnd.style.display = 'block';
-        formInner.style.display = 'none';
+        if (document.querySelector('input[name="tel"]').value.length) {
+          e.preventDefault();
+          formEnd.style.display = 'block';
+          formInner.style.display = 'none';
+        } else {
+          alert('Заполните поле');
+          return false;
+        }
       });
 
       let formStepsNum = 0;
@@ -115,7 +120,7 @@ window.addEventListener('DOMContentLoaded', () => {
             formStepsNum++;
             updateFormSteps();
             updateProgress();
-          } else if (formStepsNum >= formInputs.length) {
+          } else if (formStepsNum >= formInputs.length - 1) {
             formStepsNum++;
             updateFormSteps();
             updateProgress();
@@ -123,6 +128,14 @@ window.addEventListener('DOMContentLoaded', () => {
             alert('Заполните поле');
             return false;
           }
+
+          // if (document.querySelector('[name="tel"]').value.length) {
+
+          // }
+
+          // formStepsNum++;
+          // updateFormSteps();
+          // updateProgress();
         });
       });
 
