@@ -937,8 +937,8 @@ a {
 .popup .popup-review__top img {
   width: 100px;
   height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 20px;
@@ -1387,7 +1387,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 11;
   -webkit-transition: 200ms ease;
   -o-transition: 200ms ease;
   transition: 200ms ease;
@@ -2326,7 +2326,7 @@ a {
   border-radius: 15px;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: transparent;
   text-align: center;
 }
@@ -2559,7 +2559,7 @@ a {
 .benefits {
   padding-top: 280px;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   margin-top: -100px;
 }
 @media (max-width: 991.98px) {
@@ -3284,6 +3284,7 @@ a {
   -webkit-transition: 200ms ease;
   -o-transition: 200ms ease;
   transition: 200ms ease;
+  text-align: center;
 }
 @media (max-width: 1270px) {
   .cases__more {
@@ -3975,6 +3976,14 @@ a {
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767.98px) {
+  .form-request__checkboxes {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
 }
 .form-request__checkboxes .checkbox__text {
   font-size: 16px;

@@ -24,6 +24,62 @@ window.addEventListener('DOMContentLoaded', () => {
   })();
 
   // * ===== MultiStep Form
+  // (function multiStep() {
+  //   const prevBtns = document.querySelectorAll('.btn-prev');
+  //   const nextBtns = document.querySelectorAll('.btn-next');
+  //   const formSteps = document.querySelectorAll('.form-request__step');
+  //   const countEl = document.querySelector('.count-steps');
+  //   const stepsCount = document.querySelector('.steps-length');
+  //   const submitBtn = document.querySelector('.submit-btn');
+  //   const formEnd = document.querySelector('.form-request__end');
+  //   const formInner = document.querySelector('.form-request__inner');
+  //   const fill = document.querySelector('.form-request__fill');
+  //   const form = document.querySelector('.form-request');
+
+  //   if (form) {
+  //     stepsCount.textContent = formSteps.length;
+
+  //     submitBtn.addEventListener('click', (e) => {
+  //       e.preventDefault();
+  //       formEnd.style.display = 'block';
+  //       formInner.style.display = 'none';
+  //     });
+
+  //     let formStepsNum = 0;
+
+  //     updateProgress();
+  //     nextBtns.forEach((btn) => {
+  //       btn.addEventListener('click', () => {
+  //         formStepsNum++;
+  //         updateFormSteps();
+  //         updateProgress();
+  //       });
+  //     });
+
+  //     prevBtns.forEach((btn) => {
+  //       btn.addEventListener('click', () => {
+  //         formStepsNum--;
+  //         updateFormSteps();
+  //         updateProgress();
+  //       });
+  //     });
+
+  //     function updateFormSteps() {
+  //       formSteps.forEach((formStep) => {
+  //         formStep.classList.contains('active') &&
+  //           formStep.classList.remove('active');
+  //       });
+  //       formSteps[formStepsNum].classList.add('active');
+  //       updateProgress();
+  //     }
+
+  //     function updateProgress() {
+  //       fill.style.width = `${(100 / formSteps.length) * (formStepsNum + 1)}%`;
+  //       countEl.textContent = formSteps.length - 1 - formStepsNum;
+  //     }
+  //   }
+  // })();
+
   (function multiStep() {
     const prevBtns = document.querySelectorAll('.btn-prev');
     const nextBtns = document.querySelectorAll('.btn-next');
@@ -35,7 +91,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const formInner = document.querySelector('.form-request__inner');
     const fill = document.querySelector('.form-request__fill');
     const form = document.querySelector('.form-request');
+    const formInputs = document.querySelectorAll('.form-request__input');
 
+    console.log(formInputs.length);
     if (form) {
       stepsCount.textContent = formSteps.length;
 
@@ -50,9 +108,21 @@ window.addEventListener('DOMContentLoaded', () => {
       updateProgress();
       nextBtns.forEach((btn) => {
         btn.addEventListener('click', () => {
-          formStepsNum++;
-          updateFormSteps();
-          updateProgress();
+          if (
+            formInputs[formStepsNum] &&
+            formInputs[formStepsNum].value.length
+          ) {
+            formStepsNum++;
+            updateFormSteps();
+            updateProgress();
+          } else if (formStepsNum >= formInputs.length) {
+            formStepsNum++;
+            updateFormSteps();
+            updateProgress();
+          } else {
+            alert('Заполните поле');
+            return false;
+          }
         });
       });
 

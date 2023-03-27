@@ -42,6 +42,7 @@
                 <input
                   class="form-request__input"
                   id="name"
+                  name="ниша"
                   type="text"
                   placeholder="Например, ремонт квартир, кухни на заказ, строительство домов и тд."
                   required
@@ -63,6 +64,7 @@
                   id="name"
                   type="text"
                   placeholder=""
+                  name="город"
                   required
                 />
               </div>
@@ -79,7 +81,12 @@
                 </label>
                 <div class="form-request__checkboxes">
                   <label class="checkbox">
-                    <input class="checkbox__input" name="term" type="radio" />
+                    <input
+                      class="checkbox__input"
+                      name="term"
+                      type="radio"
+                      checked
+                    />
                     <span class="checkbox__box"></span>
                     <span class="checkbox__text"> Уже сегодня </span>
                   </label>
@@ -117,6 +124,7 @@
                       class="checkbox__input"
                       name="quantity"
                       type="radio"
+                      checked
                     />
                     <span class="checkbox__box"></span>
                     <span class="checkbox__text"> До 10 </span>
@@ -164,7 +172,12 @@
                 >
                 <div class="form-request__checkboxes">
                   <label class="checkbox">
-                    <input class="checkbox__input" name="add" type="radio" />
+                    <input
+                      class="checkbox__input"
+                      name="add"
+                      type="radio"
+                      checked
+                    />
                     <span class="checkbox__box"></span>
                     <span class="checkbox__text"> 10-50 </span>
                   </label>
@@ -198,7 +211,12 @@
                 </label>
                 <div class="form-request__checkboxes">
                   <label class="checkbox">
-                    <input class="checkbox__input" name="spend" type="radio" />
+                    <input
+                      class="checkbox__input"
+                      name="spend"
+                      type="radio"
+                      checked
+                    />
                     <span class="checkbox__box"></span>
                     <span class="checkbox__text"> Ничего не трачу </span>
                   </label>
@@ -234,14 +252,19 @@
                 >
                 <div class="form-request__checkboxes">
                   <label class="checkbox">
-                    <input class="checkbox__input" name="spend" type="radio" />
+                    <input
+                      class="checkbox__input"
+                      name="gift"
+                      type="radio"
+                      checked
+                    />
                     <span class="checkbox__box"></span>
                     <span class="checkbox__text">
                       5 000 рублей на первый месяц работы
                     </span>
                   </label>
                   <label class="checkbox">
-                    <input class="checkbox__input" name="spend" type="radio" />
+                    <input class="checkbox__input" name="gift" type="radio" />
                     <span class="checkbox__box"></span>
                     <span class="checkbox__text"
                       >Курс по продажам со 112 видеоуроками и 35
@@ -249,7 +272,7 @@
                     >
                   </label>
                   <label class="checkbox">
-                    <input class="checkbox__input" name="spend" type="radio" />
+                    <input class="checkbox__input" name="gift" type="radio" />
                     <span class="checkbox__box"></span>
                     <span class="checkbox__text">
                       Анализ репутации компании в интернете
