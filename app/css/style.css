@@ -2234,6 +2234,7 @@ a {
 }
 .reviews__slider {
   padding-bottom: 60px;
+  margin-bottom: 50px;
 }
 .reviews__slide {
   -webkit-box-sizing: border-box;
